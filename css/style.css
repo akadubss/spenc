@@ -1,0 +1,58 @@
+      body,
+      html {
+          padding-top: 0rem;
+          height: 100%;
+          width: 100%;
+          overflow-y: hidden;
+          overflow-x: hidden;
+      }
+
+
+      video {}
+
+      .landing-text {
+          z-index: 2;
+      }
+
+      header {
+          position: absolute;
+          background-color: black;
+          height: 100%;
+          width: 100%;
+          min-height: 25rem;
+          width: 100%;
+          overflow: hidden;
+      }
+
+      header video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          min-width: 100%;
+          min-height: 100%;
+          width: 100%;
+          z-index: 0;
+          -ms-transform: translateX(-50%) translateY(-50%);
+          -moz-transform: translateX(-50%) translateY(-50%);
+          -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+
+      }
+
+      header .container {
+          position: relative;
+          z-index: 2;
+      }
+
+
+
+
+
+      /*This Media is for the Large Screen */
+
+      @media (max-width: 1900px) {
+          header video {
+              height: 100;
+              width: auto;
+          }
+      }
